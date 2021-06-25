@@ -1,0 +1,33 @@
+#{
+    padding: 0;
+    margin: 0;
+
+}
+.background{
+    background: url(../img/photo-1562774053-701939374585.jfif ) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .85;
+    transition: opcity .5c ease-in-out;
+
+
+}
+.main{
+    z-index: 2;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+
+}
+.log{
+    width: 60px;
+    height: auto;
+    padding: 40px 80px;
+}
