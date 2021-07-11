@@ -26,8 +26,31 @@
     background: rgba(0,0,0,0.4);
 
 }
-.log{
-    width: 60px;
-    height: auto;
-    padding: 40px 80px;
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 0px 40px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 8px;
+    display: inline-block;
+    line-height: 10px;
+}
+.navbar ul li a{
+    text-decoration: aliceblue;
+    color:cornsilk;
+    font-size: 20px;
+    padding: 6px 13px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: grey;
+    border-radius: 1px;
 }
