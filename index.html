@@ -1,28 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYC | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="background"></div>
-    <main class="main">
-        <nav class="navbar">
-            <img class="logo" src="img/logo.jpg" alt="">
-            <ul>
-                <li><a class="active" href="index.html"> Home </a></li>
-                <li><a href="about.html"> About </a></li>
-                <li><a href="admission.html"> Admission </a></li>
-                <li><a href="contact.html"> Contact </a></li>
+*{
+    padding: 0;
+    margin: 1;
+
+}
+.background{
+    background: url(../img/Background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .75;
+    transition: opcity .5c ease-in-out;
 
 
-            </ul>
+}
+.main{
+    z-index: 2;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background: #946c6c3d;
 
-        </nav>
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 0px 40px;
+    opacity: 0.7;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 8px;
+    display: inline-block;
+    line-height: 10px;
+}
+.navbar ul li a{
+    text-decoration: rgb(222, 230, 236);
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+    padding: 6px 13px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: .9s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: grey;
+    border-radius: 15px;
+}
 
-    </main>
-</body>
-</html>
+
+.dropdown-container{
+    display: inline;
+    position: relative;
+   
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color: #456669c4;
+    text-align: left;
+    min-width: 100px;
+    display: none;
+}
+
+.dropdown-content a{
+    display: block;
+
+}
+
+
+.dropdown-content a:hover{
+    background-color: rgb(17, 13, 13);
+    display: block;
+
+    
+ }
+ 
+.dropdown-container:hover .dropdown-content{
+    display: block;
+    top: 20px;  
+}
+
+input[type=text] {
+    width: 130px;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  
+  input[type=text]:focus {
+    width: 90%;
+    
+  }
+
+
+.main .center{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family:serif;
+user-select: none;
+
+}
+.center h1{
+    color:maroon;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    color:rgba(161, 104, 104, 0.726);
+    font-size: 30px;
+    font-weight: lighter;
+    width: 900px;
+    text-align: center;
+}
+
+
+
+.center h3{
+    position:initial;
+
+    color:rgba(161, 104, 104, 0.726);
+    font-size: 30px;
+    font-weight: lighter;
+    width: 166px;
+   
+    text-align:center;
+    right: 20%;
+    left: 20%;
+}
+
+
+.center .button{
+    margin: 30px 350px;
+
+}
+ .button button{
+     height: 50px;
+     width: 200px;
+     font-size: 18px;
+     font-weight: bold;
+     color:lightslategray;
+     background-color:rgba(211, 211, 211, 0.301);
+     border: 1px solid;
+     outline: none;
+     cursor: pointer;
+     border-radius: 25px;
+     transition: 0.5s;
+ }
+ .button button:hover{
+     background-color: rgb(201, 180, 180);
+ }
+
+
+ .social-media{
+    margin: 63vh;
+    background-color: rgba(110, 96, 96, 0);
+    padding: 50px 20px;
+    text-align:center;
+}
+
+.btn{
+    border:none;
+    padding: 1px 1px;
+    border-radius: 5px;
+    font-size: 2rem;
+   
+}
+
+footer{
+    margin-top: -62vh;
+    background:rgba(128, 128, 128, 0.664);
+    width: 100%;
+    height: 30px;
+    color: ivory;
+}
+p#footer-text{
+    line-height: 2;
+    text-align: center;
+}
+
+
+
+  
+  .center .about{
+      margin: 32px 280px;
+      font-weight: bolder;
+      color: white;
+  }
+  .center .about .about-h{
+      font-weight: bolder;
+  }
+  a.aboutsite{
+      color: black;
+  }
+  a.aboutsite:hover{
+      color: gray;
+  }
+
+
+
+
+
+
+  form{
+      margin:auto;
+      width:auto;
+      padding: 0px;
+      font-weight: bolder;
+      font-size: 20px;
+      color: rgb(35, 77, 139);
+  } 
+
+  .form-control{
+      display: block;
+      width: 40%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color:blueviolet;
+      background-color: gray;
+      background-clip: padding-box;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box=shadow .15s ease-in-out;
+  }
+
+  .btn-primary:hover{
+      color:rgb(209, 176, 176);
+      background-color: gray;
+
+  }
+
+  .btn{
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 200;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1;
+      border-radius: .25rem;
+      transition: border-color .15s  ease-in-out,box=shadow .15s ease-in-out;
+
+  }
